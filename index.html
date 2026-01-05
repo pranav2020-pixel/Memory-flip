@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" type="text/css" href="/memory card/style.css">
+</head>
+
+<body>
+    <h1> Memory Cards Game</h1>
+    <div class="timer">Time: <span id="time">0</span>s</div>
+    <div class="grid-container"></div>
+    <p>score:<span class="score"></span></p>
+    <div class="actions">
+        <button onclick="restart()">Restart</button>
+    </div>
+    <audio id="flipSound" src="/memory card/flipcard-91468.mp3"></audio>
+    <audio id="matchSound" src="/memory card/correct-156911.mp3"></audio>
+
+    <script src="/memory card/logic.js"></script>
+</body>
+
+</html>
