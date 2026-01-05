@@ -27,8 +27,8 @@ function stopTimer() {
 document.querySelector(".score").textContent = score;
 
 fetch("cards.json")
-  .then((res) => res.json())
-  .then((data) => {
+  .then(res => res.json())
+  .then(data => {
     cards = [...data, ...data]; // duplicate for pairs
     totalPairs = cards.length / 2;
     shuffleCards();
@@ -127,4 +127,5 @@ function restart() {
   document.getElementById("time").textContent = time;
   stopTimer();
   generateCards();
+
 }
