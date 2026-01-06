@@ -90,4 +90,71 @@ p {
   background-size: cover;
   transform: rotateY(0deg); /* visible by default */
   
+
+}
+/* Responsive styles for small screens (mobile & iOS) */
+@media (max-width: 768px) {
+  body {
+    padding-top: 20px;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .actions button {
+    font-size: 20px;
+    padding: 6px 12px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(3, 100px); /* fewer columns */
+    grid-template-rows: repeat(auto-fit, 150px);
+    grid-gap: 12px;
+  }
+
+  .card {
+    width: 100px;
+    height: 150px;
+  }
+
+  .front-image {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .actions button {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 90px); /* even fewer columns */
+    grid-gap: 10px;
+  }
+
+  .card {
+    width: 90px;
+    height: 130px;
+  }
+
+  .front-image {
+    width: 35px;
+    height: 35px;
+  }
 }
